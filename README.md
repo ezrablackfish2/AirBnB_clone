@@ -1,2 +1,1 @@
-# AirBnB_clone
-this is a full compained web application for an airBnB website
+the airbnb clone is started
