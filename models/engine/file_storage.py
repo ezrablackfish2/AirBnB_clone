@@ -32,7 +32,7 @@ class FileStorage:
     def reload(self):
         """extracts data frm json dump."""
         try:
-            with open(FileStorage.__file_path) as f:
+            with open(FileStorage.path) as f:
                 data = json.load(f)
                 for o in data.values():
                     classname = o["__class__"]
