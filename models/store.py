@@ -15,18 +15,18 @@ class StorageClass:
 
     def all(self):
         """Returnallall values of a class."""
-        return FileStorage.infos
+        return StorageClass.infos
 
     def new(self, obj):
         """create new class for an object"""
         classname = obj.__class__.__name__
-        FileStorage.infos["{}.{}".format(classname, obj.id)] = obj
+        StorageClass.infos["{}.{}".format(classname, obj.id)] = obj
 
     def save(self):
         """this dumps or saves data to JSON."""
-        info = FileStorage.infos
+        info = StorageClass.infos
         data = {obj: info[obj].to_dict() for obj in info.keys()}
-        with open(FileStorage.path, "w") as f:
+        with open(StorageClass.path, "w") as f:
             json.dump(data, f)
 
     def reload(self):
