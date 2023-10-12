@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """model directory creator."""
 
-from models.engine.file_storage import FileStorage
+from models.store import StorageClass
 
-storage= FileStorage()
+storage= StorageClass()
 storage.reload()

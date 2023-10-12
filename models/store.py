@@ -3,14 +3,14 @@
 import json
 
 
-class FileStorage:
+class StorageClass:
     """this is the json editing class.
 
     Attributes:
         path (str): The name of the file to save objects to.
         infos (dict): A dictionary of instantiated objects.
     """
-    path = "file.json"
+    path = "data.json"
     infos = {}
 
     def all(self):
