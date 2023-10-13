@@ -74,11 +74,11 @@ class HBNBCommand(cmd.Cmd):
 
 
     def do_quit(self, arg):
-        """exits the console."""
+        """exits the console.."""
         return True
 
     def do_EOF(self, arg):
-        """if a file was inserted this is when the file ends."""
+        """if a file was inserted this is when the file ends.."""
         print("")
         return True
     def do_hi(self, arg):
