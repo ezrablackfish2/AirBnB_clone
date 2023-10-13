@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """this is the json file storage system."""
 import json
+from models.base_model import BaseModel
+from models.user import User
+from models.place import Place
+
 
 
 class StorageClass:
